@@ -20,7 +20,7 @@ body{
     border: 1px solid #ddd;
     background: linear-gradient(to bottom, rgb(195, 39, 195), #ffffff);
     box-shadow: 0px 4px 8px orange;
-    width: 500px;
+    width: 600px;
     height: 58vh;
     margin: auto;
     position: relative;
@@ -29,26 +29,23 @@ body{
     flex-direction: column;
     align-items: center;
     //height: 30vh;
+    &::before {
+        content: "🌟🌟🌈🎉✨🎊✨🌈🎉🌟🌟";
+        font-size: 24px;
+        position: absolute;
+        left: 8rem;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        bottom: 2rem;
+       h1{
+        margin-top: 3rem;
+        padding-top: 2rem;
+    }
     
-}
-.container::before {
-    content: "🌟🌟🌈🎉✨🎊✨🌈🎉🌟🌟";
-    font-size: 24px;
-    position: absolute;
-    //top: 10px;
-    left: 6rem;
-   align-items: center;
-   justify-items: center;
-   bottom: 2rem;
-   h1{
-    //text-align: center;
-//   margin: 10px 0;
-  margin-top: 3rem;
-  padding-top: 2rem;
+    }
 }
 
- 
-}
 button{
     background-color: orange;
     border-radius: 8px;

@@ -14,11 +14,11 @@ function Api() {
     let res = await fetch(url);
       let data = await res.json()
       console.log(data);
-      setJokes(data);
+      setJokes(data); //Shows data
   }
   if(isClicked){
     getRandomJoke();
-    setIsClicked(false); // Reset isClicked after fetching
+    setIsClicked(false); // Reset "isClicked" after fetching
   }
   },[isClicked]);
 
@@ -28,7 +28,7 @@ function Api() {
     <div className={s.container} >
       <h1>Get Random Joke:</h1>
       <button onClick={()=>{setIsClicked(true)}}> Get a joke </button>
-
+    
      {jokes && ( 
         <div className={s.jokeContainer}key={jokes.id}>
           <h2> {jokes.setup}</h2>
